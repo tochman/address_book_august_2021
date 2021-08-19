@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "superstatic src --port 3000",
-    "test": "mocha --file specs/specHelper.js -u bdd-lazy-var/global --recursive --exit specs",
+    "test": "mocha --file specs/specHelper.js -u bdd-lazy-var/global --recursive --exit specs/units",
     "cy:open": "cypress open",
     "cypress": "start-server-and-test start http://localhost:3000 cy:open"
   }

@@ -14,7 +14,7 @@ global.window.localStorage = {
     this.data = {};
   },
   setItem(key, value) {
-    this.data[key] = value;
+    this.data[key] = JSON.stringify(value);
   },
   getItem(key) {
     const value = this.data[key];
